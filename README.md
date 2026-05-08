@@ -73,6 +73,7 @@ Sempre que quiser novos resultados:
 
 ```
 node scripts/benchmark.js
+
 python scripts/plot.py
 ```
 
