@@ -45,6 +45,40 @@ Se o arquivo .env definir a variavel PORT, a aplicacao usa essa porta (ex: 3001)
   "year": 2022,
   "color": "Branco"
 }
+
+## Benchmark e graficos (Couchbase)
+
+1. Garanta o Couchbase rodando e o bucket `carros` criado.
+2. Ajuste o arquivo `.env` com suas credenciais.
+3. Rode o benchmark:
+
+```
+node scripts/benchmark.js
+```
+
+4. Ajuste o checklist de vulnerabilidade (opcional):
+
+- Arquivo: `data/vulnerability.json`
+- Score: 0 = nao, 0.5 = desconhecido, 1 = sim
+
+5. Gere os graficos (PNG):
+
+```
+python scripts/plot.py
+```
+
+### Atualizar graficos
+
+Sempre que quiser novos resultados:
+
+```
+node scripts/benchmark.js
+python scripts/plot.py
+```
+
+Os PNGs atualizados ficam em `reports/`.
+
+Graficos gerados em `reports/`.
 ```
 
 ## Checklist de vulnerabilidade (Couchbase)
