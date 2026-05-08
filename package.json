@@ -1,0 +1,15 @@
+{
+  "name": "car-registry-couchbase",
+  "version": "1.0.0",
+  "description": "Site simples de registro de carros com Couchbase",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "couchbase": "^4.3.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
